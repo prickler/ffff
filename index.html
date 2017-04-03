@@ -1,0 +1,40 @@
+<head>
+    <h1 class="message" align="center">kółko i krzyżyk</h1>
+    <link rel="stylesheet" href="plik.css">
+</head>
+<script src="winnerChecker.js"></script>
+<script src="game.js"></script>
+<script src="stats.js"></script>
+
+<body onload="startGame();">
+    <div id="buttons">
+        <button type="button" class="button" onclick="javascript: startGame();">Nowa gra</button>
+        <button type="button" class="button" onclick="javascript: starterSwitch();">Zaczyna O</button>
+        <button type="button" class="button" onclick="window.location.reload();">Reset</button>
+    </div>
+    <div id="message" class="message"></div>
+    <div id="oWon" class="stats"></div>
+    <br>
+    <div id="xWon" class="stats"></div>
+    <br>
+    <div id="draws" class="stats"></div>
+
+
+
+    <table class="table">
+        <tr>
+            <td id="s1" class="Square" onclick="nextMove(this);"></td>
+            <td id="s2" class="Square" onclick="nextMove(this);"></td>
+            <td id="s3" class="Square" onclick="nextMove(this);"></td>
+        </tr>
+        <tr>
+            <td id="s4" class="Square" onclick="nextMove(this);"></td>
+            <td id="s5" class="Square" onclick="nextMove(this);"></td>
+            <td id="s6" class="Square" onclick="nextMove(this);"></td>
+        </tr>
+        <tr>
+            <td id="s7" class="Square" onclick="nextMove(this);"></td>
+            <td id="s8" class="Square" onclick="nextMove(this);"></td>
+            <td id="s9" class="Square" onclick="nextMove(this);"></td>
+        </tr>
+</body>
